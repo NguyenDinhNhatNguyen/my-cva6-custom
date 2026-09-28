@@ -6,7 +6,7 @@ Trong giai đoạn này, lõi xử lý sử dụng một **Dummy CPU** đóng va
 
 ---
 
-## 🛠️ Yêu cầu Hệ thống & Công cụ
+## Yêu cầu Hệ thống & Công cụ
 Để cấu hình, biên dịch và vận hành mô hình mô phỏng, môi trường Linux/WSL của bạn cần được cài đặt sẵn:
 * **Hệ điều hành:** Linux (Ubuntu) hoặc WSL trên Windows.
 * **Công cụ biên dịch:** `CMake >= 3.21`, `GCC/G++` (Hỗ trợ chuẩn C++17), `Make`.
@@ -16,7 +16,7 @@ Trong giai đoạn này, lõi xử lý sử dụng một **Dummy CPU** đóng va
 
 ---
 
-## 🗺️ Memory Map
+## Memory Map
 Mạng định tuyến Bus giải mã địa chỉ  dựa trên các vùng không gian ô nhớ cố định:
 * **UART Target (Cổng xuất dữ liệu màn hình TX):** Địa chỉ vùng chứa `0x10000000` - `0x10000FFF`
   * Thanh ghi dữ liệu tương tác: Offset `0x1C` (Địa chỉ vật lý: `0x1000001C`)
@@ -26,7 +26,7 @@ Mạng định tuyến Bus giải mã địa chỉ  dựa trên các vùng khôn
 
 ---
 
-## 📂 Sơ đồ Tổ chức Cấu trúc Dự án (Repository Structure)
+## Sơ đồ Tổ chức Cấu trúc Dự án (Repository Structure)
 
 Mã nguồn dự án được phân tách cấu trúc rõ ràng thành các thư mục và tệp tin chuyên trách:
 
@@ -52,7 +52,7 @@ Mã nguồn dự án được phân tách cấu trúc rõ ràng thành các thư
 ```
 
 
-## 🚀 Hướng dẫn Biên dịch và Khởi chạy từ Thư mục gốc
+## Hướng dẫn Biên dịch và Khởi chạy từ Thư mục gốc
 
 Bạn hãy mở Terminal ngay tại thư mục gốc ngoài cùng của dự án (`my-cva6-custom-dummy-cpu`) và chạy chuỗi lệnh tự động hóa siêu ngắn gọn sau:
 
@@ -71,7 +71,7 @@ stty -icanon -echo && ./my_vp.exe; stty sane
 ```
 ---
 
-## 📊 Kết quả Mô phỏng Kỳ vọng 
+## Kết quả Mô phỏng Kỳ vọng 
 
 Khi khởi chạy, mô phỏng sẽ vận hành tuần tự, chính xác theo dòng thời gian tuyến tính của hạt nhân SystemC và tự động kết thúc an toàn khi Dummy CPU hoàn tất vòng lặp phát sinh giao dịch.
 
