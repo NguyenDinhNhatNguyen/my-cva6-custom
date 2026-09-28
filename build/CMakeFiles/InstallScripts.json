@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/mnt/d/my_cva6_vp/build/cmake_install.cmake",
+		"/mnt/d/my_cva6_vp/build/cpu_models/riscv_vp/cmake_install.cmake",
+		"/mnt/d/my_cva6_vp/build/cpu_models/riscv_vp/softfloat/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

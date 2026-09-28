@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/my_vp.exe.dir/link.d CMakeFiles/my_vp.exe.dir/main.cpp.o -o my_vp.exe  -Wl,-rpath,/usr/local/systemc-2.3.4/lib cpu_models/riscv_vp/libriscv_vp.a /usr/local/systemc-2.3.4/lib/libsystemc.so cpu_models/riscv_vp/softfloat/libsoftfloat.a -lpthread

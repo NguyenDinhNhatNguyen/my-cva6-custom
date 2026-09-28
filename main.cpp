@@ -56,4 +56,4 @@ int sc_main(int argc, char* argv[]) {
     std::cout << "Simulation finished." << std::endl;
 
     return 0;
-}
+};

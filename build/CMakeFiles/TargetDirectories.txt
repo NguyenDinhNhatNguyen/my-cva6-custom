@@ -1,0 +1,9 @@
+/mnt/d/my_cva6_vp/build/CMakeFiles/my_vp.exe.dir
+/mnt/d/my_cva6_vp/build/CMakeFiles/edit_cache.dir
+/mnt/d/my_cva6_vp/build/CMakeFiles/rebuild_cache.dir
+/mnt/d/my_cva6_vp/build/cpu_models/riscv_vp/CMakeFiles/riscv_vp.dir
+/mnt/d/my_cva6_vp/build/cpu_models/riscv_vp/CMakeFiles/edit_cache.dir
+/mnt/d/my_cva6_vp/build/cpu_models/riscv_vp/CMakeFiles/rebuild_cache.dir
+/mnt/d/my_cva6_vp/build/cpu_models/riscv_vp/softfloat/CMakeFiles/softfloat.dir
+/mnt/d/my_cva6_vp/build/cpu_models/riscv_vp/softfloat/CMakeFiles/edit_cache.dir
+/mnt/d/my_cva6_vp/build/cpu_models/riscv_vp/softfloat/CMakeFiles/rebuild_cache.dir
