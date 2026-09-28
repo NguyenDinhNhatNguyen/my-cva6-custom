@@ -2,10 +2,10 @@
 #include <tlm.h>
 
 #include "cpu_models/riscv_vp/include/riscv_vp_wrapper.h"
-#include "uart_target.h"
-#include "timer_target.h"
-#include "simple_router.h"
-#include "ram_target.h"
+#include "hw/uart_target.h"
+#include "hw/timer_target.h"
+#include "hw/simple_router.h"
+#include "hw/ram_target.h"
 
 SC_MODULE(Irq_Adapter) {
     sc_in<bool> irq_in;

@@ -376,7 +376,7 @@ CMakeFiles/my_vp.exe.dir/main.cpp.o: /mnt/d/my_cva6_vp/main.cpp \
  /mnt/d/my_cva6_vp/cpu_models/riscv_vp/include/riscv_vp_wrapper.h \
  /usr/include/c++/15/cstdint \
  /mnt/d/my_cva6_vp/cpu_models/include/cdc/cpu/cpu_base.h \
- /usr/local/systemc-2.3.4/include/tlm /mnt/d/my_cva6_vp/uart_target.h \
+ /usr/local/systemc-2.3.4/include/tlm /mnt/d/my_cva6_vp/hw/uart_target.h \
  /usr/local/systemc-2.3.4/include/tlm_utils/simple_target_socket.h \
  /usr/local/systemc-2.3.4/include/sysc/kernel/sc_dynamic_processes.h \
  /usr/local/systemc-2.3.4/include/sysc/kernel/sc_except.h \
@@ -403,7 +403,7 @@ CMakeFiles/my_vp.exe.dir/main.cpp.o: /mnt/d/my_cva6_vp/main.cpp \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h /mnt/d/my_cva6_vp/timer_target.h \
- /mnt/d/my_cva6_vp/simple_router.h \
+ /usr/include/linux/close_range.h /mnt/d/my_cva6_vp/hw/timer_target.h \
+ /mnt/d/my_cva6_vp/hw/simple_router.h \
  /usr/local/systemc-2.3.4/include/tlm_utils/simple_initiator_socket.h \
- /mnt/d/my_cva6_vp/ram_target.h
+ /mnt/d/my_cva6_vp/hw/ram_target.h

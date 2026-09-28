@@ -37,6 +37,8 @@ add_executable(my_vp.exe main.cpp)
 target_include_directories(my_vp.exe PRIVATE 
     ${SYSTEMC_INCLUDE_DIR} 
     .
+	hw
+	fw
     cpu_models/include
     third_party/riscv-vp/vp/src
 )

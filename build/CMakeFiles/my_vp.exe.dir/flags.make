@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/d/my_cva6_vp/. -I/mnt/d/my_cva6_vp/cpu_models/include -I/mnt/d/my_cva6_vp/third_party/riscv-vp/vp/src -I/mnt/d/my_cva6_vp/cpu_models/riscv_vp/include -isystem /usr/local/systemc-2.3.4/include
+CXX_INCLUDES = -I/mnt/d/my_cva6_vp/. -I/mnt/d/my_cva6_vp/hw -I/mnt/d/my_cva6_vp/fw -I/mnt/d/my_cva6_vp/cpu_models/include -I/mnt/d/my_cva6_vp/third_party/riscv-vp/vp/src -I/mnt/d/my_cva6_vp/cpu_models/riscv_vp/include -isystem /usr/local/systemc-2.3.4/include
 
 CXX_FLAGS = -std=gnu++17
 
