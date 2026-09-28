@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/my_vp.exe.dir/link.d CMakeFiles/my_vp.exe.dir/main.cpp.o -o /mnt/c/Users/nhatn/Downloads/my_cva6_vp/my_vp.exe  -Wl,-rpath,/usr/local/systemc-2.3.4/lib /usr/local/systemc-2.3.4/lib/libsystemc.so

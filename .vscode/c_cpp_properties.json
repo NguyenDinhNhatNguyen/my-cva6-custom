@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "WSL-Ubuntu",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/IPs",
+                "${workspaceFolder}/CPU",
+                "${workspaceFolder}/cpu_models/include",
+                "${workspaceFolder}/third_party/riscv-vp/vp/src",
+                "/usr/local/systemc-2.3.4/include"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
