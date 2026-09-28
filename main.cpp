@@ -1,10 +1,10 @@
 #include <systemc.h>
 #include <tlm.h>
 
-#include "cva6_initiator.h"
-#include "uart_target.h"
-#include "timer_target.h"
-#include "simple_router.h"
+#include "CPU/cva6_initiator.h"
+#include "IPs/uart_target.h"
+#include "IPs/timer_target.h"
+#include "IPs/simple_router.h"
 
 int sc_main(int argc, char* argv[]) {
     CVA6_Initiator  cpu("CPU");

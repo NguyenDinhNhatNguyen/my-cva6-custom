@@ -1,0 +1,3 @@
+/mnt/c/Users/nhatn/Downloads/my-cva6-custom-dummy-cpu/build/CMakeFiles/my_vp.exe.dir
+/mnt/c/Users/nhatn/Downloads/my-cva6-custom-dummy-cpu/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/nhatn/Downloads/my-cva6-custom-dummy-cpu/build/CMakeFiles/rebuild_cache.dir
