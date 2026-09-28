@@ -4,7 +4,7 @@ Hệ thống Virtual Platform (VP) tích hợp mô hình **Instruction Set Simul
 
 ---
 
-## 🛠️ Yêu cầu Hệ thống & Trình dịch chéo
+## Yêu cầu Hệ thống & Trình dịch chéo
 * **Hệ điều hành:** Linux (Ubuntu) hoặc WSL.
 * **Công cụ:** `CMake >= 3.21`, `GCC/G++`, `Make`, `SystemC 2.3.4`.
 * **Trình dịch chéo:** `gcc-riscv64-unknown-elf`
@@ -14,14 +14,14 @@ sudo apt update && sudo apt install gcc-riscv64-unknown-elf
 
 ---
 
-## 🗺️ Bản đồ Địa chỉ (Memory Map)
+## Bản đồ Địa chỉ (Memory Map)
 * **RAM (2MB):** `0x80000000` - `0x801FFFFF`
 * **UART Target:** `0x10000000` - `0x10000FFF` (Data: `0x1000001C`)
 * **Timer Target:** `0x10030000` - `0x10030FFF` (Ctrl: `0x10030004`, Compare: `0x10030118`)
 
 ---
 
-## 📂 Cấu trúc Dự án
+## Cấu trúc Dự án
 * `main.cpp` : Top-level netlist, khởi tạo hệ thống và cấu hình Terminal.
 * `CMakeLists.txt` : Script cấu hình CMake.
 * `hw/` : Ngoại vi phần cứng (`simple_router.h`, `ram_target.h`, `uart_target.h`, `timer_target.h`).
@@ -31,7 +31,7 @@ sudo apt update && sudo apt install gcc-riscv64-unknown-elf
 
 ---
 
-## 🚀 Hướng dẫn Khởi chạy
+## Hướng dẫn Khởi chạy
 
 1. **Biên dịch Firmware (.elf):**
 ```bash
@@ -50,7 +50,7 @@ stty -icanon -echo && ./my_vp.exe firmware.elf; stty sane
 
 ---
 
-## 📊 Kết quả Mô phỏng 
+## Kết quả Mô phỏng 
 
 Khi khởi chạy, mô phỏng sẽ nạp tệp `firmware.elf` vào RAM và thực thi các chỉ thị mã máy một cách tuần tự. Hệ thống hỗ trợ tương tác bàn phím thời gian thực và xử lý mạch ngắt bất đồng bộ một cách chuẩn xác.
 
