@@ -1,0 +1,34 @@
+cmake_minimum_required(VERSION 3.10)
+project(my_cva6_custom CXX)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# 1. Danh sách các đường dẫn phổ biến cài đặt SystemC
+set(SYSTEMC_SEARCH_PATHS
+    $ENV{SYSTEMC_HOME}
+    "/usr/local/systemc-2.3.4"
+    "/usr/local/systemc"
+    "/opt/systemc"
+    "/home/nguyn/systemc-2.3.4"
+)
+
+# 2. Yêu cầu CMake tự động tìm kiếm file systemc.h và thư viện
+find_path(SYSTEMC_INCLUDE_DIR systemc.h PATHS ${SYSTEMC_SEARCH_PATHS} PATH_SUFFIXES include)
+find_library(SYSTEMC_LIBRARY systemc PATHS ${SYSTEMC_SEARCH_PATHS} PATH_SUFFIXES lib-linux64 lib)
+
+# 3. Kiểm tra kết quả
+if(SYSTEMC_INCLUDE_DIR AND SYSTEMC_LIBRARY)
+    message(STATUS "+++ DA TIM THAY SYSTEMC +++")
+    message(STATUS "Thu muc Include: ${SYSTEMC_INCLUDE_DIR}")
+    message(STATUS "Thu vien Lib: ${SYSTEMC_LIBRARY}")
+else()
+    message(FATAL_ERROR "--- KHONG TIM THAY SYSTEMC! Thu muc tren may cua ban khong dung. ---")
+endif()
+
+# 4. Biên dịch mã nguồn
+add_executable(my_vp.exe main.cpp)
+
+# 5. Link tự động đường dẫn vừa tìm được
+target_include_directories(my_vp.exe PRIVATE ${SYSTEMC_INCLUDE_DIR})
+target_link_libraries(my_vp.exe PRIVATE ${SYSTEMC_LIBRARY})
